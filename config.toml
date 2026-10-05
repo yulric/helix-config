@@ -1,0 +1,10 @@
+theme = "dark_high_contrast"
+
+[editor]
+rulers = [81]
+
+[editor.soft-wrap]
+enable = true
+
+[keys.insert]
+"C-c" = "normal_mode"
