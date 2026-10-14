@@ -7,3 +7,11 @@ name = "markdown"
 language-servers = ["harper-ls"]
 auto-format = true
 formatter = { command = "dprint-markdown" }
+
+[[language]]
+name = "quarto"
+# harper-ls recognizes "quarto", not Helix's default "qmd".
+language-id = "quarto"
+language-servers = ["harper-ls"]
+auto-format = true
+formatter = { command = "dprint-markdown" }
