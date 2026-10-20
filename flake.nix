@@ -37,6 +37,7 @@
           # Language servers and formatters, visible only to hx.
           tools = [
             pkgs.harper
+            pkgs.typescript-language-server
             dprint-markdown
           ];
         in

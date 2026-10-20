@@ -15,6 +15,9 @@ need to install.
 Tools provided by the flake:
 
 * [harper-ls](https://writewithharper.com): grammar checking for Markdown.
+* [typescript-language-server](https://github.com/typescript-language-server/typescript-language-server):
+  TypeScript and JavaScript. Helix uses it by default, so it needs no entry in
+  `languages.toml`.
 * `dprint-markdown`: formats Markdown on save with [dprint](https://dprint.dev).
   It hard wraps at 80 characters and uses `*` for bullets. These settings live
   in `flake.nix`.
