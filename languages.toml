@@ -15,3 +15,56 @@ language-id = "quarto"
 language-servers = ["harper-ls"]
 auto-format = true
 formatter = { command = "dprint-markdown" }
+
+# Web languages are formatted with Prettier using the project's own config.
+# See prettier-stdin in flake.nix.
+
+[[language]]
+name = "javascript"
+auto-format = true
+formatter = { command = "prettier-stdin", args = ["%{buffer_name}"] }
+
+[[language]]
+name = "jsx"
+auto-format = true
+formatter = { command = "prettier-stdin", args = ["%{buffer_name}"] }
+
+[[language]]
+name = "typescript"
+auto-format = true
+formatter = { command = "prettier-stdin", args = ["%{buffer_name}"] }
+
+[[language]]
+name = "tsx"
+auto-format = true
+formatter = { command = "prettier-stdin", args = ["%{buffer_name}"] }
+
+[[language]]
+name = "json"
+auto-format = true
+formatter = { command = "prettier-stdin", args = ["%{buffer_name}"] }
+
+[[language]]
+name = "jsonc"
+auto-format = true
+formatter = { command = "prettier-stdin", args = ["%{buffer_name}"] }
+
+[[language]]
+name = "css"
+auto-format = true
+formatter = { command = "prettier-stdin", args = ["%{buffer_name}"] }
+
+[[language]]
+name = "scss"
+auto-format = true
+formatter = { command = "prettier-stdin", args = ["%{buffer_name}"] }
+
+[[language]]
+name = "html"
+auto-format = true
+formatter = { command = "prettier-stdin", args = ["%{buffer_name}"] }
+
+[[language]]
+name = "vue"
+auto-format = true
+formatter = { command = "prettier-stdin", args = ["%{buffer_name}"] }

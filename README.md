@@ -21,6 +21,11 @@ Tools provided by the flake:
 * `dprint-markdown`: formats Markdown on save with [dprint](https://dprint.dev).
   It hard wraps at 80 characters and uses `*` for bullets. These settings live
   in `flake.nix`.
+* `prettier-stdin`: formats JavaScript, TypeScript, JSON, CSS, SCSS, HTML and
+  Vue on save with [Prettier](https://prettier.io). It uses the project's own
+  Prettier from `node_modules` if there is one, otherwise the one from nixpkgs.
+  Prettier finds the project's config itself, including a `prettier` field in
+  `package.json`, and skips files listed in `.prettierignore`.
 
 ## Setup
 
